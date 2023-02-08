@@ -1,4 +1,4 @@
-// import { ActionType } from "../constants/action-type"
+ 
 import {ActionType} from '../contants/action-type'
 const initialState = {
 //     product:[

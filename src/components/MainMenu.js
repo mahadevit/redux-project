@@ -20,7 +20,7 @@ const MainMenu = () => {
             navbarScroll
           >
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/">Product</Nav.Link>
+            <Nav.Link href="/products">Product</Nav.Link>
             <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
@@ -45,20 +45,14 @@ const MainMenu = () => {
             <Button variant="outline-success">Search</Button>
           </Form>
           <Nav>
-            <Nav.Link href="/">
-              <a href="" className='btn btn-outline-dark'>
+            <Nav.Link href="/" className='btn btn-outline-dark'>
                 <i className='fa fa-sign-in me-1'></i>Login  
-              </a>
             </Nav.Link>
-            <Nav.Link href="/">
-              <a href="" className='btn btn-outline-dark'>
-                <i className='fa fa-user-plus me-1'></i>Register  
-              </a>
+            <Nav.Link href="/register" className='btn btn-outline-dark'>
+                <i className='fa fa-user-plus me-1'></i>Register                 
             </Nav.Link>
-            <Nav.Link href="/">
-              <a href="" className='btn btn-outline-dark'>
-                <i className='fa fa-shopping-cart me-1'></i>Cart(0)  
-              </a>
+            <Nav.Link href="/cart" className='btn btn-outline-dark'>
+                <i className='fa fa-shopping-cart me-1'></i>Cart(0)
             </Nav.Link>
           </Nav>    
         </Navbar.Collapse>

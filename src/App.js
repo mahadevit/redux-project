@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import { ProductListing } from './containers/ProductListing'
 import {ProductDetail} from './containers/ProductDetail'
 import MainMenu from './components/MainMenu'
- 
+import Home from './components/Home'
 function App() {
   return (
     <div className="App">
@@ -16,8 +16,7 @@ function App() {
             <Route path="/product/:productId" element={<ProductDetail/>}/>
             <Route>404</Route>
          </Routes>
-      </Router>
-      
+      </Router> 
     </div>
   );
 }

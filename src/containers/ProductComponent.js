@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import {Link} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 export const ProductComponent = () => {
 const products=useSelector((state)=>state.allProducts.product);
 // const{id,title,category}=products[0];
@@ -20,7 +20,8 @@ const renderList=products.map((product)=>{
                     <div className='content'>
                         <div className='header'> {title}</div>      
                         <div className=''>{price}</div> 
-                        <div className=''>{category}</div>                 
+                        <div className=''>{category}</div>  
+                             
                     </div>                
             </div>
             </Link>

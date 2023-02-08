@@ -66,3 +66,11 @@
   height: 550px;
   margin-bottom: 150px;
 }
+.latest-product .card {
+  padding: 15px;
+  min-height: 450px;
+  height: 100%;
+}
+.latest-product .card img.card-img-top {
+  height: 300px;
+}
